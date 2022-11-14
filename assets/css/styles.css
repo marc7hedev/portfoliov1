@@ -996,6 +996,9 @@ img{
 .testimonial__icon-star{
     color: var(--first-color);
 }
+.testimonial__star-container{
+    display: flex;
+}
 
 .swiper .swiper-pagination-testimonial{
     bottom: 0;
@@ -1165,7 +1168,7 @@ img{
 
 /* MEDIA QUERIES */
 /*Dispositivos pequeños*/
-@media screen and (max-width: 391px){
+@media screen and (max-width: 350px){
     /*antes max-width: 350px*/
     .container{
         margin-left: var(--mb-1);
