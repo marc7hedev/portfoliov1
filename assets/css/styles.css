@@ -978,6 +978,7 @@ img{
     margin-right: var(--mb-0-75);
 }
 
+
 .testimonial__name{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
@@ -1164,7 +1165,8 @@ img{
 
 /* MEDIA QUERIES */
 /*Dispositivos pequeños*/
-@media screen and (max-width: 350px){
+@media screen and (max-width: 391px){
+    /*antes max-width: 350px*/
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -1208,6 +1210,9 @@ img{
         width: 200px;
     }
 
+    .testimonial__name{
+        
+    }
     .testimonial__data,
     .testimonial__header{
         flex-direction: column;
