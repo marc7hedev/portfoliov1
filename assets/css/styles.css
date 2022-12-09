@@ -7,7 +7,7 @@
 
     /* COLORES */
     /* Cambiar color favorito */
-    --hue-color: 160; /*Cyan 160 - Purple 250 - Green 142 - Blue 230 - Pink 340 */
+    --hue-color: 155; /*Cyan 160 - Purple 250 - Green 142 - Blue 230 - Pink 340 */
 
     /* MODO DE COLOR HSL */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -201,6 +201,95 @@ img{
     
 }
 
+
+/* THEME SWITCHER */
+.color-switcher{
+    position: fixed;
+    top: 100px; right: -107px;
+    width: 100px;
+    /* padding: 10px; */
+    /* background-color: var(--container-color-light-alt); */
+    /* background: var(--container-color); */
+    z-index: 1000;
+    transition: .4s;
+}
+
+
+.color-switcher.active{
+    right: 0;
+    
+    border-radius: .4rem;
+    
+}
+
+.color-switcher .title{
+    color: #fff;
+    background-color: var(--first-color);
+    opacity: .9;
+    /* font-size: 20px; */
+    font-size: 1.5rem;
+    /* margin-bottom: 10px;
+    border-bottom: 1px solid var(--first-color); */
+    padding: 0.55rem 0;
+    text-align: center;
+    border-radius: none;
+}
+
+/* .color-switcher .switcher-btn{
+    position: absolute;
+    top: 0; left: -75px;
+    color: var(--text-color);
+    background: var(--container-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 39px;
+} */
+
+
+.color-switcher .switcher-btn{
+    position: absolute;
+    /* top: 0; left: -64px; */
+    top: 0; left: -3.95rem;
+    /* color: #fff; */
+    background-color: var(--first-color);
+    opacity: .9; /*<--para dar OPACIDAD*/
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: .4rem 0 0 .4rem;
+    /* z-index: var(--z-tooltip); */
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.194);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0 / 10%); */
+    transition: .4s;
+}
+
+.color-switcher .switcher-btn i::before{
+    color: #fff;
+    font-size: 1.5rem;
+    animation: rotate 2.5s linear infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.color-switcher .theme-buttons-container{
+    background: var(--container-color-light-alt);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0 0  0 .4rem;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.194);
+}
+.color-switcher .theme-buttons-container .theme-buttons{
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
 
 
 /* NAV */
