@@ -77,19 +77,19 @@
 /* Variables para modo Oscuro */
 body.dark-theme{
 
-     --first-color-second:hsl(var(--hue-color), 30%, 8%) ;
-     --title-color: hsl(var(--hue-color), 8%, 95%);
-     --text-color: hsl(var(--hue-color), 8%, 75%);
-     --input-color: hsl(var(--hue-color), 29%, 16%);
-     --body-color: hsl(var(--hue-color), 28%, 5%);
-     --body-color-alt: hsl(var(--hue-color), 28%, 12%);
-     --container-color: hsl(var(--hue-color), 20%, 8%);
-     --container-color-alt: hsl(var(--hue-color), 29%, 16%);
-     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-     --container-color-light: hsla(0, 0%, 0%, 0.626); /*<<BLUR*/
-     --container-color-light-alt: rgba(0, 0, 0, 0.549); /*<<BLUR*/
-     transition: .6s;
+    --first-color-second:hsl(var(--hue-color), 30%, 8%) ;
+    --title-color: hsl(var(--hue-color),8%, 95%);
+    --text-color: hsl(var(--hue-color),8%, 75%);
+    --input-color: hsl(var(--hue-color),29%, 16%);
+    --body-color: hsl(var(--hue-color),28%, 5%);
+    --body-color-alt: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 20%, 8%);
+    --container-color-alt: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    --container-color-light: hsla(0,0%, 0%, 0.626); /*<<BLUR*/
+    --container-color-light-alt: rgb(0, 0, 0, 0.549); /*<<BLUR*/
+    transition: .6s;
 }
 
 /* Botón para modo Oscuro */
@@ -201,6 +201,21 @@ img{
     
 }
 
+/* SCROLL SECTION ANIMATION */
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    
+    transform: translateX(0);
+}
+
+
+
 
 /* THEME SWITCHER */
 .color-switcher{
@@ -310,11 +325,12 @@ img{
     transition: .2s;
 }
 
+
 .nav__logo:hover{
     color: var(--first-color);
-    font-size: 1.2rem;
-    
 }
+
+
 
 .nav__toggle{
     font-size: 1.1rem;
@@ -501,7 +517,9 @@ img{
 }
 
 .button:hover{
+    letter-spacing: 0.05em;
     background-color: var(--first-color-alt);
+    /* box-shadow: 0 0 15px var(--first-color); */
 }
 
 .button__icon{
