@@ -668,33 +668,43 @@ img{
 }
 
 .skills__html{
-    width: 45%;
+    width: 70%;
 }
 .skills__css{
-    width: 45%;
+    width: 50%;
 }
 .skills__js{
+    width: 40%;
+}
+.skills__bootstrap{
     width: 30%;
 }
 .skills__react{
-    width: 25%;
+    width: 30%;
 }
-.skills__reactnative{
-    width: 20%;
+.skills__nextjs{
+    width: 15%;
 }
 
 .skills__nodejs{
-    width: 30%;
+    width: 40%;
 }
 .skills__expressjs{
-    width: 30%;
+    width: 40%;
 }
 .skills__mongodb{
     width: 30%;
 }
-.skills__nextjs{
-    width: 20%;
+.skills__sql{
+    width: 50%;
 }
+.skills__figma{
+    width: 15%;
+}
+.skills__photoshop{
+    width: 30%;
+}
+
 
 .skills__close .skills__list{
     height: 0;
@@ -1336,12 +1346,16 @@ img{
     }
 
     .about__container,
-    .skills__container,
     .portfolio__content,
     .project__container,
     .contact__container,
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__container,
+    .services__container{
+        grid-template-columns: repeat(3, 1fr);
     }
 
 
