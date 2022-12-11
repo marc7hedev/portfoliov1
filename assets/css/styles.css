@@ -326,7 +326,6 @@ img{
     transition: .2s;
 }
 
-
 .nav__logo:hover{
     color: var(--first-color);
 }
@@ -472,7 +471,37 @@ img{
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
+    overflow: hidden; /*Se supone que esto iría en el body*/
 }
+.home__subtitle .text{
+    position: relative;
+    color: var(--first-color);
+}
+.home__subtitle .text.first-text{
+    color: var(--title-color);
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--body-color);
+    border-left: 2px solid var(--first-color);
+    animation: typing 4s steps(17) infinite;
+    transition: .6s;
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
 
 .home__description{
     margin-bottom: var(--mb-2);

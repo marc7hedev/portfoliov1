@@ -31,6 +31,32 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener("click", linkAction));
 
 
+// ANIMACIÓN DE TYPING EN EL HOME__SUBTITLE
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Web app developer";
+    }, 0);
+    setTimeout(() => {
+        text.textContent = "Ui/Ux designer";
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = "Freelancer";
+    }, 8000);
+    setTimeout(() => {
+        text.textContent = "Autodidacta";
+    }, 12000);
+    setTimeout(() => {
+        text.textContent = "Soñador";
+    }, 16000);
+}
+
+textLoad();
+setInterval(textLoad, 16000);
+
+
+
 // ACORDEÓN DE SKILLS
 const skillsContent = document.getElementsByClassName("skills__content"),
     skillsHeader = document.querySelectorAll(".skills__header");
