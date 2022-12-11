@@ -567,11 +567,11 @@ img{
 
 /*BONITO EFECTO*/
 .button--white:hover{
-    background-color: var(--first-color-alt);
-    color: #FFF;
+    background-color: #fff;
+    color: var(--first-color);
     /*POSIBLE BUG CON ESTA TRANSICIÓN*/
-    transform:scale(125%) translateX(.7rem);
-    
+    /* transform:scale(125%) translateX(.7rem); */
+    letter-spacing: 0.1em;
     transition: .3s;
     
     
