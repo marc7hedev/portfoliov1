@@ -53,7 +53,7 @@ const textLoad = () => {
 }
 
 textLoad();
-setInterval(textLoad, 16000);
+setInterval(textLoad, 20000);
 
 
 
