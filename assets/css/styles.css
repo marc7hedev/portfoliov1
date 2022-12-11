@@ -282,6 +282,7 @@ img{
     color: #fff;
     font-size: 1.5rem;
     animation: rotate 2.5s linear infinite;
+    transition: .3s;
 }
 
 @keyframes rotate {
@@ -289,6 +290,13 @@ img{
         transform: rotate(360deg);
     }
 }
+
+.color-switcher .switcher-btn:hover{
+    /* font-size: 1.66rem; */
+    /* transform: scale(1.5); */
+    opacity: .7;
+}
+
 
 .color-switcher .theme-buttons-container{
     background: var(--container-color-light-alt);
