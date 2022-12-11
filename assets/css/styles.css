@@ -1160,6 +1160,10 @@ img{
 .contact__information{
     display: flex;
     margin-bottom: var(--mb-2);
+    transition: 0.3s;
+}
+.contact__information:hover{
+    letter-spacing: 0.05em;
 }
 
 .contact__icon{
